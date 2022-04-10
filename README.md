@@ -5,4 +5,4 @@ The site was created using some prewritten html and css code and my own javascri
 
 The finished site can be found here [Here](https://elliottli97.github.io/Java-Script-Password-Generator/)
 
-![Website Screenshot](/Java-Script-Password-Generator/Images/Website.JPG)
+![Website Screenshot](/Images/Website.JPG)
