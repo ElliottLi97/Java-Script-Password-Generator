@@ -28,19 +28,19 @@ function generatePassword() {
   return passwordplacehold
 }
 
-function randomChoiceloop () {
+function randomChoiceloop () { 
   for( i=0; i< passwordlength; i++){
     const randomIndex = Math.floor(Math.random() * potentialpasswordcharacters.length)
     passwordplacehold += potentialpasswordcharacters[randomIndex]
   }
-} // RNG for potential PW character array 
+} // RNG for potential PW character array. Loops until the desired password length. Randommly chooses a character from the potential character index. 
 
 function numberask() {
   passwordlength = prompt("How long would you like your password?\r\nEnter a number from 8-128.")
   checknumber()
 }
 
-function checknumber(){
+function checknumber(){ //Checks user inputs for password length to ensure that they input a number between 8 and 128
   if (!parseInt(passwordlength)){
     alert("Please enter a number")
     numberask()
@@ -52,7 +52,7 @@ function checknumber(){
   }
 }
 
-function characteradd() {
+function characteradd() { //asks uder which sets of characters they want in their PW
   potentialpasswordcharacters = []
   if (confirm("Would you like lower case letters?")){potentialpasswordcharacters = potentialpasswordcharacters.concat(lowercase)
     console.log(potentialpasswordcharacters)}
